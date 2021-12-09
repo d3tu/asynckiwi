@@ -1,0 +1,21 @@
+{
+    "name": "asynckiwi",
+    "version": "0.0.1",
+    "description": "Async queue.",
+    "main": "index.js",
+    "types": "index.ts",
+    "keywords": [
+        "async",
+        "queue"
+    ],
+    "author": "d3tu",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/d3tu/asynckiwi.git"
+    },
+    "bugs": {
+        "url": "https://github.com/d3tu/asynckiwi/issues"
+    },
+    "homepage": "https://github.com/d3tu/asynckiwi"
+}
