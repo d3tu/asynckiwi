@@ -9,7 +9,7 @@ export class AsyncKiwi extends Array<Next<void>> {
     }
 
     wait(): Promise<void> {
-        const next = this[this.length - 1].promise || Promise.resolve(),
+        const next = this.length ? this[this.length - 1].promise : Promise.resolve(),
             promise = new Promise<void>(resolve => {
                 super.push({ promise, resolve });
             });
