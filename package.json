@@ -1,6 +1,6 @@
 {
     "name": "asynckiwi",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "description": "Async queue.",
     "main": "index.js",
     "types": "index.ts",

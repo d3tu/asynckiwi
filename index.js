@@ -6,11 +6,11 @@ class AsyncKiwi extends Array {
         super();
     }
     wait() {
-        const next = this.length ? this[this.length - 1].promise : Promise.resolve();
-        let promise;
-        promise = new Promise(resolve => {
-            super.push({ promise, resolve });
+        let resolve;
+        const next = this.length ? this[this.length - 1].promise : Promise.resolve(), promise = new Promise(res => {
+            resolve = res;
         });
+        super.push({ promise, resolve });
         return next;
     }
     next() {
